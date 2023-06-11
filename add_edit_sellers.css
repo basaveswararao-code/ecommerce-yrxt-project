@@ -1,0 +1,334 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.headersection{
+  display: flex;
+  height: 10vh;
+  background-color: #FDD835;
+  margin-top: 0.2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.headersection .left{
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.headersection .left img{
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+.headersection .left h2{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.headersection .right{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+}
+
+.headersection .right button{
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: white;
+  color: #304FFE;
+  height: 40px;
+  width: 180px;
+}
+#cartimg{
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+}
+#userimg{
+  height: 2.8rem;
+  width: 2.8rem;
+  cursor: pointer;
+}
+
+
+/* section five  */
+
+.five{
+  height: 50vh;
+}
+.fivebottom{
+  display: grid;
+  grid-template-columns: 40% auto;
+  margin-left: 3rem;
+}
+.fivebottom .left h1 {
+  margin: 1rem;
+}
+.fivebottom .left button{
+  width: 50%;
+  padding: 0rem;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: lightgray;
+  margin-top: 0rem;
+}
+
+.fivebottom .left input{
+  width: 50%;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 20px;
+  background-color: #FDD835;
+}
+.fivebottom .right .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.fivebottom .right .bottom{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  margin-top: 2rem;
+}
+#addnewproductbutton{
+  border: none;
+  padding: 0.5rem 2rem;
+  background: #304FFE;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px 0px black;
+  cursor: pointer;
+}
+
+.products{
+  width: 10rem;
+  text-align: center;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.products img{
+  height: 130px;
+  /* width: 100%; */
+  padding: 0.3rem;
+  border-radius: 30px;
+  margin-right: 0.5rem;
+}
+
+.products h4{
+  font-size: 1rem;
+  margin-left: 1.5rem;
+}
+.price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  color: #0D47A1;
+  font-size: 0.7rem;
+ margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+.price h5{
+  font-size: 0.9rem;
+  color: #0D47A1;
+
+
+}
+.delete{
+  border: none;
+  padding: 0.4rem 0.3rem;
+  background-color: #dd3939;
+  color: white;
+  border-radius: 10px;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.editbutton{
+  border: none;
+  padding: 0.4rem 1rem;
+  background-color: rgb(46, 46, 252);
+  color: white;
+  border-radius: 10px;
+  margin: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+/* section six */
+.six{
+  height: 100vh;
+}
+.sixbottom{
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+.sixbottom .left{
+  background-color: lightblue;
+  height:90vh;
+  width: 100%;
+}
+.sixbottom .left form{
+  height: 75vh;
+  width: 90%;
+  margin: 1rem 2rem;
+}
+.sixbottom .left form input{
+  width: 85%;
+  border: none;
+  outline-style: none;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin: 0.8rem 2rem;
+}
+.sixbottom .left form textarea{
+  width: 85%;
+  border: none;
+  outline-style: none;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin: 0.8rem 2rem;
+}
+.sixbottom .left  button{
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  background-color: #304FFE;
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 5rem;
+  margin-top: 0rem;
+  cursor: pointer;
+
+}
+.sixbottom .right .livenewproduct{
+  width: 12.6rem;
+  text-align: center;
+  margin: 3rem 3rem;
+}
+.livenewproduct h3{
+  margin: 0.5rem;
+}
+.livenewproduct button{
+  border: none;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  background-color: rgb(61, 61, 227);
+  border-radius: 10px;
+  color: white;
+  margin-top: 1rem;
+}
+.sixbottom img{
+  height: 150px;
+  border-radius: 20px;
+}
+.sixbottom .right h1{
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+.sixbottom .right p{
+  font-size: 1rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+/* section seven  */
+.seven{
+  height: 100vh;
+}
+.sevenbottom{
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+.sevenbottom .left{
+  background-color: rgb(215, 245, 235);
+  height: 90vh;
+  width: 100%;
+}
+.sevenbottom .left form{
+  height: 70vh;
+  width: 90%;
+  margin: 2rem 3rem;
+}
+.sevenbottom .left form input{
+  width: 85%;
+  border: none;
+  outline-style: none;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  margin: 0.8rem 2rem;
+}
+.sevenbottom .left form textarea{
+  width: 85%;
+  border: none;
+  outline-style: none;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  margin: 0.8rem 2rem;
+}
+.sevenbottom .left button{
+  border: none;
+  padding: 0.7rem 1.5rem;
+  background-color: chocolate;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 5rem;
+  margin-top: 0rem;
+
+}
+.sevenbottom .right .liveupdateproduct{
+  width: 10rem;
+  /* text-align: center; */
+  margin: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.liveupdateproduct h3{
+  margin: 1rem 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.liveupdateproduct button{
+  border: none;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  background-color: rgb(61, 61, 227);
+  border-radius: 10px;
+  color: white;
+  margin-top: 1rem;
+}
+.sevenbottom img{
+  height: 150px;
+}
+.sevenbottom .right h1{
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+.sevenbottom .right p{
+  font-size: 1.1rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Confidence Page</title>
+    <link rel="shortcut icon" href="./images/bitcoin.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="left">
+            <img src="./images/logo.png" alt="">
+            <h1>STAR SHOPPER</h1>
+        </div>
+        <div id="right">
+            <a href="./purchasepage.html"><img src="./images/cart.png" alt=""></a>
+            <a href="./yourpurchase.html"><img src="./images/user.png" alt=""></a>
+            <button id="lagout">Logout</button>
+        </div>
+    </header>
+    <section class="productpage">
+        <div class="left">
+            <div class="right07">
+                <img id="leftpic" src="./images/left.png" alt="">
+
+            </div>
+            <div class="left07">
+                <h2>SHOP WITH UTMOST</h2>
+                <h1>CONFIDENCE</h1>
+                <P>shop from the latest trendly clothes to the best gadgets.with star shopper yuo save 10% every time you shop!</P>
+                <button id="tocart">Browse Products</button>
+                <h3>Products avaliable from:</h3>
+                <ul>
+                    <li><img src="./images/egale.png" alt=""></li>
+                    <li><img src="./images/some.png" alt=""></li>
+                    <li><img src="./images/flutter.png" alt=""></li>
+                    <li><img src="./images/noteland.png" alt=""></li>
+                    <li><img src="./images/triangle.png" alt=""></li>
+                    <li><img src="./images/adidas.png" alt=""></li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="right">
+            <img id="design" src="./images/friday02.png" alt="">
+            <div id=" rightar">
+                <a href="./product_style_page.html"><img id="rightarrow" src="./images/right).png" alt=""></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+button{
+    cursor: pointer;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FDD835;
+    padding-bottom: 0.5rem;
+}
+header #left{
+    display: flex;
+    margin-left: 2.5rem;
+    align-items: center;
+}
+header #left img{
+    height: 55px;
+    margin-top: 0.5rem;
+}
+header #left h1{
+    margin-left: 1.5rem;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+
+}
+header #right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+header #right img{
+    height: 50px;
+    margin: 0.5rem;
+    cursor: pointer;    
+}
+header #right button{
+    margin: 0.5rem 1.5rem 0 1rem;    
+    height: 50px;
+    width: 180px;
+    background-color: white;
+    font-size: 20px;
+    color: #304FFE;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+}
+
+
+.productpage{
+    display: grid;
+    grid-template-columns: 40% auto;
+    margin-top: 1.5rem;
+}
+
+.productpage .left{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin-top: 3.5rem;
+}
+
+.right07{
+    margin-top: 10rem;
+}
+.right07 img{
+    height: 50px;
+    cursor: pointer;
+}
+
+.left07 h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.left07 h1{
+    font-size: 4.2rem;
+    margin-top: 1rem;
+    color: #304FFE;
+}
+
+.left07 p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.left07 button{
+    height: 50px;
+    width: 250px;
+    background-color: #304FFE;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.left07 h3 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.left07 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+
+}
+.left07 ul li{
+    list-style: none; 
+}
+
+.productpage .left .left07 ul li img{
+    height: 50px;
+}
+
+#design{
+    height: 528px;
+    width: 100%;
+}
+
+#rightarrow {
+    height: 50px;
+    position: absolute;
+    margin-top: 20rem;
+    top: 0;
+    right: 1rem;
+    pointer-events: visible;
+    cursor: pointer;
+}
+</style>
+<!-- 
+<script>
+    document.querySelector("#lagout").addEventListener("click",()=>{
+        alert("are you sure to Logout / Login Details was removed")
+        localStorage.removeItem("loginData");
+        window.location.href = "index.html";
+
+    })
+    document.querySelector("#tocart").addEventListener("click",()=>{
+        location.href = "cart1.html"
+    })
+</script> -->
+
+<script>
+    document.querySelector("#lagout").addEventListener("click",()=>{
+        alert("Are you sure you want to log out? Your login details will be removed.")
+        localStorage.removeItem("loginData");
+        window.location.replace("index.html");
+    })
+
+    document.querySelector("#tocart").addEventListener("click",()=>{
+        window.location.replace("cart1.html");
+    })
+</script>

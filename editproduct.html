@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Products pAge</title>
+    <link rel="stylesheet" href="./editproduct.css">
+    <link rel="shortcut icon" href="./images/bitcoin.png" type="image/x-icon">
+</head>
+<body>
+      
+    <header>
+        <div id="left">
+            <img src="./images/logo.png" alt="">
+            <h1>STAR SHOPPER</h1>
+        </div>
+        <div id="right">
+            <a href="./yourpurchase.html"><img src="./images/user.png" alt=""></a>
+            <button id="logout">Lagout</button>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <form id="form" >
+               <input type="text" placeholder="Product Title"  class="title" onkeyup="titleText()" > <br>
+               <input type="text" placeholder="Product Description" class="description" > <br>
+              <span>
+                <input type="text" placeholder="Product Price" class="price" onkeyup="titleText()" > 
+                <input type="text" placeholder="Product Discount" class="discount" onkeyup="titleText()"> <br>
+              </span>
+               <input type="text" placeholder="Product Category" class="category" > <br>
+               <input type="text" placeholder="Product Image URL" class="imageurl"  onkeyup="titleText()"> <br>            
+            </form>
+            <input type="submit" class="addProduct" value="Updated" >
+        </div>
+        <div class="right">
+            <h2>LIVE PREVIEW</h2>
+            <p class="para">This is how, your customers will see your product on website.</p>
+            <div class="item">
+                <img src="https://picsum.photos/150" alt="" class="imagelive">
+                <h2 class="titlelive">Vegetable</h2>
+                <h3 class="pricelive" >₹199/-  </h3>  <span class="discountlive">(10% Off)</span> <br>            
+                <a href="./cart1.html"><button id="AddToCart" >Add to Cart</button></a>
+            </div>
+        </div>
+    </main>
+    <script src="./editproduct.js"></script>
+</body>
+</html>
+<style>
+    a{
+        text-decoration: none;
+    }
+</style>
+
+<script>
+    function displayData() {
+        if(localStorage.getItem('products')){
+            products = JSON.parse(localStorage.getItem('products'))
+
+            products.forEach(product=>{
+                editProduct(product)
+            })
+        }
+    }
+    function editProduct(product){
+    document.querySelector(".title").value = ""
+    document.querySelector(".description").value = ""
+    document.querySelector(".price").value = ""
+    document.querySelector(".discount").value = ""
+    document.querySelector(".category").value = ""
+    document.querySelector(".imageurl").value = ""
+
+    document.querySelector(".title").value = product.title
+    document.querySelector(".description").value = product.description
+    document.querySelector(".price").value = product.price
+    document.querySelector(".discount").value = product.discount
+    document.querySelector(".category").value = product.category
+    document.querySelector(".imageurl").value = product.imageurl
+}
+
+displayData()
+
+</script>

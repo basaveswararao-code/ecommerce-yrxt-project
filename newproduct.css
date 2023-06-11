@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+button{
+    cursor: pointer;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FDD835;
+    padding-bottom: 0.4rem;
+}
+header #left{
+    display: flex;
+    margin-left: 2.5rem;
+    align-items: center;
+}
+header #left img{
+    height: 55px;
+    margin-top: 0.5rem;
+}
+header #left h1{
+    margin-left: 1.5rem;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+header #right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+header #right img{
+    height: 50px;
+    margin: 0.5rem;
+    cursor: pointer;    
+}
+header #right button{
+    margin: 0.5rem 1.5rem 0 1rem;    
+    height: 50px;
+    width: 180px;
+    background-color: white;
+    font-size: 20px;
+    color: #304FFE;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+main .left{
+    background-color: lightblue;
+    height: 90vh;
+    border-right: 5px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .left form{
+    margin: 0.5rem 0 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+main .left form .title{
+    height: 45px;
+    width: 500px;
+    outline: none;
+    border:none;
+    border-radius: 15px;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+
+}
+main .left form span{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+main .left form .description{
+    margin-top: 1rem;
+    height: 65px ;
+    width: 500px;
+    outline: none;
+    border:none;
+    border-radius: 15px;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+
+}
+main .left form .price{
+    margin: 1rem  0 0 0;
+    height: 45px ;
+    width: 230px;
+    outline: none;
+    border:none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+}
+main .left form .discount{
+    margin: 1rem 1rem 1.5rem 2.5rem;
+    height: 45px ;
+    width: 230px;
+    outline: none;
+    border:none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+}
+main .left form .category{
+    height: 45px ;
+    width: 500px;
+    outline: none;
+    border:none;
+    border-radius: 15px;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+
+}
+main .left form .imageurl{
+    margin-top: 1rem;
+    height: 45px ;
+    width: 500px;
+    outline: none;
+    border:none;
+    border-radius: 15px;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+
+}
+main .left .addProduct{
+    text-align: center;
+    margin-top: 0.5rem;
+    height: 50px;
+    width: 200px;
+    background-color: #304FFE;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+main .right{
+    margin: 1rem 0 0 2.5rem;
+}
+main .right h2{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+main .right p{
+    margin-top: 0.7rem;
+    width: 300px;
+    font-size: 1.2rem;
+}
+main .right .item{
+    margin: 2rem 0 0 0rem;
+}
+main .right .item img{
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+}
+main .right .item h2{
+    width: 150px;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+main .right .item h3{
+    width: 150px;
+    font-size: 20px ;
+    color: #304FFE;
+    display: inline;
+    margin-left: 2rem;
+}
+main .right .item span{
+    font-size: 12px;
+    margin-left: 1rem;
+    display: inline;
+    color: #304FFE;
+}
+main .right .item button{
+    margin: 1rem 0 0 2.2rem;
+    height: 40px;
+    width: 120px;
+    background-color: #304FFE;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
+

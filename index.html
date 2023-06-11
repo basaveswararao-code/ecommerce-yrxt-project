@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/bitcoin.png" type="image/x-icon">
+    <title>BasiShop</title>
+</head>
+<body>
+    <section id="main">
+        
+    <div class="left">
+        <img src="./images/buying.png" alt="">
+        <button id="shoppers_page_1">Shoppers Login</button>
+    </div>
+    <div class="right">
+        <img src="./images/sell.png" alt="">
+        <button id="sellers_page_1" >Sellers Login</button>
+    </div>
+    </section>
+</body>
+</html>
+
+<style>
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #B3E5FC;  
+}
+
+.left img{
+    height: 70vh;
+    width: auto;
+}
+
+.left button{
+    width: 20rem;
+    margin-top: 2rem;
+    outline: none;
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: rgb(58, 58, 168);
+    color: white;
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #0D47A1;
+}
+
+.right img{
+    height: 70vh;
+    width: auto;
+}
+
+.right button{
+    width: 20rem;
+    margin-top: 1.7rem;
+    outline: none;
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: white;
+    color: rgb(58, 58, 168);
+    cursor: pointer;
+}
+</style>
+
+<!-- <script>
+    
+document.querySelector("#shoppers_page_1").addEventListener("click", () => {
+  location.href="shoppers1.html"
+})
+
+document.querySelector("#sellers_page_1").addEventListener("click", () => {
+  location.href="sellers1.html"
+})
+</script> -->
+
+<script>
+    
+    document.querySelector("#shoppers_page_1").addEventListener("click", () => {
+      window.location.assign("shoppers1.html");
+    });
+    
+    document.querySelector("#sellers_page_1").addEventListener("click", () => {
+      window.location.replace("sellers1.html");
+    });
+</script>
+    

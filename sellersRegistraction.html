@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellers Registration </title>
+    <link rel="shortcut icon" href="./images/bitcoin.png" type="image/x-icon">
+</head>
+<body>
+    <section id="sctwo">
+        <div class="left">
+            <img src="./images/sell.png" alt="">
+            <button id="shopperslogin">Go to Shoppers Login</button>
+        </div>
+        <hr>
+        <div class="right">
+        <form id="sellersDetails" class="loginsell">
+            <p>Login and start shopping from your favourite brands. Refer a friend and save 50% OFF.</p>
+            <input type="email" placeholder="Login Email" class="email">
+            <input type="password" placeholder="Password" class="password">
+            <input type="password" placeholder="Re-enter Password" class="Renter-password">
+            <button type="submit" value="Create Account" class="sellersloginButton" id="submit-button"> Create Account</button>
+            <h3 class="createAccount2">Login</h3>
+        </form>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+#sctwo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(58, 58, 168);
+}
+
+.left img{
+    height: 70vh;
+    width: auto;
+}
+
+.left button{
+    width: 20rem;
+    margin-top: 2rem;
+    outline: none;
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: white;  
+    color: rgb(58, 58, 168);
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(58, 58, 168);
+}
+
+.loginsell{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sctwo .right .loginsell{
+    margin: 5rem 8rem 5rem 10rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #B3E5FC;  
+    height: 70vh;
+    gap: 2rem;
+}
+
+#sctwo .right .loginsell p{
+    color: white;
+    font-size: 1.1rem;
+    color: #0D47A1;
+
+}
+
+#sctwo .right .loginsell .email{
+    display: block;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 1.2rem;
+    outline: none;
+}
+  
+#sctwo .right .loginsell .password{
+    display: block;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 1.2rem;
+    outline: none;
+}
+ 
+#sctwo .right .loginsell .Renter-password{
+    display: block;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 1.2rem;
+    outline: none;
+}
+#sctwo .right .loginsell .sellersloginButton{
+    background-color: white;
+    color: #0D47A1;
+    border: none;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    height: 45px;
+    width: 220px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+#sctwo .right .loginsell .sellersloginButton a{
+    text-decoration: none;
+}
+#sctwo .right .loginsell h3{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: 550;
+    color: #0D47A1;
+}
+</style>
+
+
+<script>
+
+
+// document.querySelector(".createAccount2").addEventListener("click", function(){
+//     location.href = "sellers1.html"
+// })
+
+// document.querySelector("#shopperslogin").addEventListener("click",()=>{
+//     location.href = "shoppers1.html";
+// })
+document.querySelector(".createAccount2").addEventListener("click", function(){
+    window.location.replace("sellers1.html");
+});
+
+document.querySelector("#shopperslogin").addEventListener("click",()=>{
+    window.location.replace("shoppers1.html");
+});
+
+
+const createSellerLoginButton = document.querySelector('.sellersloginButton');
+    createSellerLoginButton.addEventListener('click', () => {
+    const email = document.querySelector('.email').value;
+    const password = document.querySelector('.password').value;
+    const reenterPassword = document.querySelector('.Renter-password').value;
+
+    const SellerloginData = {
+        email: email,
+        password: password,
+        reenterPassword: reenterPassword
+    };
+
+    // Store the login data in local storage
+    localStorage.setItem('SellerloginData', JSON.stringify(SellerloginData));
+});
+
+const storedsellerLoginData = JSON.parse(localStorage.getItem('SellerloginData'));
+
+</script> 
+
+
+

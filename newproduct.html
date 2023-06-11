@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product</title>
+    <link rel="stylesheet" href="./newproduct.css">
+    <link rel="shortcut icon" href="./images/bitcoin.png" type="image/x-icon">
+</head>
+<body>  
+    <header>
+        <div id="left">
+            <img src="./images/logo.png" alt="">
+            <h1>STAR SHOPPER</h1>
+        </div>
+        <div id="right">
+            <a href="./yourpurchase.html"><img src="./images/user.png" alt=""></a>
+            <button id="logout">Lagout</button>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <form id="form">
+               <input type="text" placeholder="Product Title"  class="title"> <br>
+               <input type="text" placeholder="Product Description" class="description" > <br>
+              <span>
+                <input type="text" placeholder="Product Price" class="price" > 
+                <input type="text" placeholder="Product Discount" class="discount"> <br>
+              </span>
+               <input type="text" placeholder="Product Category" class="category" > <br>
+               <input type="text" placeholder="Product Image URL" class="imageurl"> <br>  
+            </form>
+            <a href="./sellersProduct1.html"><input type="submit" class="addProduct" value="Add Product" ></a>
+        </div>
+        <div class="right">
+            <h2>LIVE PREVIEW</h2>
+            <p class="para">This is how, your customers will see your product on website.</p>
+            <div class="item" id="product-preview" >
+                <img src="https://picsum.photos/150" alt="" class="imagelive">
+                <h2 class="titlelive">Vegetable</h2>
+                <h3 class="pricelive" >₹199/-  </h3>  <span class="discountlive">(10% Off)</span> <br>            
+                <a href="./cart1.html"><button id="AddToCart" >Add to Cart</button></a>
+            </div> 
+
+        </div>
+    </main>
+    <script type="module" src="./newproduct.js"></script>
+</body>
+</html>

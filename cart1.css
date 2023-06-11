@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+
+}
+section{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+#left{
+    height: 100vh;
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#left #serchleft input{
+    text-align: center;
+    padding: 0.7rem 0;
+    margin-left: 2rem;
+    width: 80%;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 70px;
+    border: none;
+    color: black;
+    font-weight: lighter;
+    background-color: lightblue;
+    margin-top: -1rem;
+
+}
+#left #serchleft  hr{
+    width: 23vw;
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+#left .price{
+    margin-top: -3rem;
+} 
+
+#left .price p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+#left .price p input{
+    width: 37%;
+    border: none;
+    border-bottom: 1px solid  black;
+    outline: none;
+    margin-left: 0.5rem;
+    text-align: center;
+
+}
+
+#left .sort{
+    justify-content: flex-start;
+    margin-top: -5rem;
+    margin-left: 1rem;
+}
+#left .sort h3{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+#left #SelectItem{
+    width: 70%;
+    margin-left: 2.5rem;
+    background: lightblue;
+    outline: none;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#left #SelectItem option{
+    font-size: 1rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+#left .category{
+    margin-left: 1rem;
+    margin-top: 1rem;   
+}
+#left .category h3{
+    font-size: 1.4rem;
+}
+
+#left .catbox{
+    width: 20vw;
+    display: grid;
+    grid-template-rows: 50% auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: " sports sports footwer footwer"
+                        " electronics electronics electronics electronics "
+                        " shirts shirts pants  pants "
+                        " office_sypplies office_sypplies office_sypplies office_sypplies ";
+    /* border: 2px solid black; */
+    height: 100%;
+    overflow: scroll;
+    gap: 0.7rem;
+    margin-top: 0.5rem;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+#left .catbox .mensBox{
+    background-color: green;
+    grid-area: sports;
+    width: 100%;
+    height: 50%;
+    border-radius:  40px;
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+#left .catbox .jeweleryBox{
+    background-color:rgb(233, 10, 47);
+    grid-area: footwer;
+    width: 100%;
+    height: 50%;
+    border-radius:  40px;
+    text-align: center;
+    padding-top: 0.6rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+
+}
+#left .catbox .electronicsbox{
+    background-color: blue;
+    grid-area: electronics;
+    margin-top: -2.3rem;
+    border-radius:  40px;
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    width: 70%;
+    cursor: pointer;
+    color: white;
+
+}
+#left .catbox .shirtsbox{
+    background-color: orange;
+    grid-area: shirts;
+    border-radius:  40px;
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+
+}
+#left .catbox .womensBox{
+    background-color: lightsalmon;
+    grid-area: pants;
+    border-radius:  40px;
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+
+}
+#left .catbox .officalJoketsbox{
+    background-color: blueviolet;
+    grid-area: office_sypplies;
+    border-radius:  40px;
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+
+}
+
+#left .tocart{
+    text-align: center;
+    margin-bottom: -0.5rem;
+
+}
+#left .tocart button{
+    height: 100%;
+    width: 80%;
+    padding: 0.7rem 0;
+    width: 80%;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 70px;
+    border: none;
+    color: white;
+    background-color: #0D47A1;
+    cursor: pointer;
+}
+hr{
+    border: 1px solid black;
+}
+#right{
+    height: 100vh;
+    width: 70vw;
+}
+#right #top h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.boxs{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    height: 100vh;
+    width: 110%;
+    overflow: scroll;
+}
+.box{
+    margin-top: 0.5rem; 
+    margin-left: 1rem; 
+    margin-right: 0; 
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 200px;
+    width: 180px;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.box img{
+    height: 75px;
+}
+.box h3{
+    font-size: 0.8rem;
+}
+.box p{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #0D47A1;
+}
+.box span{
+    margin-left: 0.5rem;
+}
+.box button{
+    height: auto;
+    width: 60%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 5rem;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    background-color: #0D47A1;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+
+
+
+  
